@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackernews</title>
+    <link rel="stylesheet" href="{% static 'news/style.css' %}">
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar" >
+            <a href="#" class="logo">Y</a>
+            <h4 class="title" >Hacker News</h4>
+            <ul>
+                <li><a href="#">new</a> | </li>
+                <li><a href="#">past</a> | </li>
+                <li><a href="#">comments</a> | </li>
+                <li><a href="#">ask</a> | </li>
+                <li><a href="#">show</a> | </li>
+                <li><a href="#">jobs</a> | </li>
+                <li><a href="#">submit</a></li>
+            </ul>
+            <a href="#"class="login" >login</a>
+        </nav>
+    </header>
+    {% block main %} {% endblock main %}
+    <footer class="container" >
+        <div style="background-color: #f6f6ef;" >
+            <hr>
+            <h5>Applications are open for YC Summer 2022</h4> 
+            <div class="search">
+                <label >Search :</label>
+                <input type="text">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
